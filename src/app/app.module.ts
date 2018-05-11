@@ -8,6 +8,9 @@ import { VegetablesComponent } from './vegetables/vegetables.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './routes';
+import { DumpComponent } from './examples/dumb/dumb.component';
+import { SmartComponent } from './examples/smart/smart.component';
+import { AvailabilityService } from './availability.service';
 
 
 @NgModule({
@@ -15,13 +18,15 @@ import { routes } from './routes';
     AppComponent,
     FruitsComponent,
     VegetablesComponent,
-    HomeComponent
+    HomeComponent,
+    DumpComponent,
+    SmartComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [AvailabilityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
