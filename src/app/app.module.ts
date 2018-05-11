@@ -11,6 +11,9 @@ import { routes } from './routes';
 import { DumpComponent } from './examples/dumb/dumb.component';
 import { SmartComponent } from './examples/smart/smart.component';
 import { AvailabilityService } from './availability.service';
+import { HeadingComponent } from './shared/heading/heading.component';
+import { ListCheckComponent } from './shared/list-check/list-check.component';
+import { ListComponent } from './shared/list/list.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { AvailabilityService } from './availability.service';
     VegetablesComponent,
     HomeComponent,
     DumpComponent,
-    SmartComponent
+    SmartComponent,
+    HeadingComponent,
+    ListCheckComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

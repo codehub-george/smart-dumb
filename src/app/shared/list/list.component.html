@@ -1,0 +1,6 @@
+<div class="list-item" *ngFor="let fruit of fruits">
+    <span>{{fruit.name}}</span>
+    <span>{{fruit.country}}</span>
+    <span>{{fruit.availability}}</span>
+    <button (click)="refreshStatus(fruit.name)">Refresh</button>
+  </div>

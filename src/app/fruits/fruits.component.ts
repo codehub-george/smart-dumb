@@ -14,15 +14,6 @@ export class FruitsComponent implements OnInit {
   constructor(private service: AvailabilityService) { }
 
   ngOnInit() {
-    this.service.fetchFruits().subscribe(fruits => this.fruits = fruits);
-  }
-
-  refreshStatus(name: string) {
-    console.log('refresh ' + name);
-  }
-
-  refreshAll() {
-    console.log('refresh list');
   }
 
 }
